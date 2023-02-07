@@ -1,1 +1,52 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300;400;500;600;700&display=swap');
+
+.header {
+    // background-color: red;
+    // padding: 10px 0;
+    margin: 0;
+    padding: 8px 0;
+}
+
+.logoWords {
+    font-family: 'Unbounded', cursive;
+    font-weight: 500;
+    font-size: 28px;
+    color: #618460;
+}
+
+.logo {
+    padding: 2px 10px 10px;
+    background-color: #618460;
+    color: #fff;
+    border-radius: 50%;
+}
+
+.restoranName {
+    font-size: 17px;
+    font-weight: bold;
+    color: #495057;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.cards {
+    border-radius: 10px;
+    margin: 0 10px;
+}
+
+.card-item {
+    cursor: pointer;
+    padding-bottom: 10px;
+    transition: 0.5s;
+}
+
+.card-item:hover, .card-item:focus, .card-item:active {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
