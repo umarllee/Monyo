@@ -28,7 +28,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 
 
-CAROUSEL adding:
+## CAROUSEL adding:
 npm i mdb-angular-ui-kit
 
 import MdbCarouselModule  from 'mdb-angular-ui-kit/carousel';   to PUBLIC MODULE
