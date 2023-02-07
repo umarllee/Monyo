@@ -1,8 +1,29 @@
-<div class="row  px-3">
+<!-- <div class="row  px-3">
     <mdb-carousel [controls]="true" [indicators]="true" [animation]="'fade'">
         <mdb-carousel-item>
             <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(15).webp" class="d-block w-100" alt="..." />
             <div class="carousel-caption d-none d-md-block">
+                 <div *ngFor="let data of dataSource" class="cards col-lg-3 justify-content-center" style="margin: 0;">
+        <div class="mat-elevation-z5 card-item" style="border-radius: 10px;">
+            <div class="cardImg" style="height: 150px;">
+                <img [src]="data.url" class="image" alt="">
+            </div>
+
+            <div class="restoranName mt-3 mb-2 px-1">
+                {{data.restaurantName}}
+            </div>
+
+            <div class="px-1" style="border-top: 1px dashed black;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                    <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                </svg>
+                {{data.distance}} km
+            </div>
+        </div>
+    </div>
                 <h5>First slide label</h5>
                 <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
             </div>
@@ -22,7 +43,40 @@
             </div>
         </mdb-carousel-item>
     </mdb-carousel>
-</div>
+</div> -->
+
+
+<!-- <div>Some tags before</div>
+<owl-carousel-o [options]="customOptions">
+    <ng-template carouselSlide>Slide 1</ng-template>
+    <ng-template carouselSlide>Slide 2</ng-template>
+    <ng-template carouselSlide>Slide 3</ng-template>
+</owl-carousel-o>
+<div>Some tags after</div> -->
+
+
+
+<div>Some tags before</div>
+<owl-carousel-o [options]="customOptions">
+
+    <ng-container >
+        <ng-template carouselSlide id="1">
+            <!-- <img [src]="slide.src"  [title]="slide.title"> -->
+            salam
+        </ng-template>
+    </ng-container>
+
+    <ng-container >
+        <ng-template carouselSlide id="1">
+            <!-- <img [src]="slide.src"  [title]="slide.title"> -->
+            salam
+        </ng-template>
+    </ng-container>
+
+
+</owl-carousel-o>
+<div>Some tags after</div>
+
 
 
 <div class="row px-3 mt-4">
