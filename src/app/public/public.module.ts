@@ -4,7 +4,7 @@ import { PublicComponent } from './public.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { Router, RouterModule } from '@angular/router';
 import { AppRoutingModule } from '../app-routing.module';
-
+import { MdbCarouselModule } from 'mdb-angular-ui-kit/carousel';
 
 @NgModule({
   declarations: [
@@ -15,6 +15,7 @@ import { AppRoutingModule } from '../app-routing.module';
     CommonModule,
     RouterModule,
     AppRoutingModule,
+    MdbCarouselModule
     
   ]
 })
